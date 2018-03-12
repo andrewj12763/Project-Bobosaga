@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Reality.Cart</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style2.css">
+</head>
+
+<body>
+	<!-- left panel calorie Calculator -->
+	<div class="col-md-3">
+		<div class="panel panel-default left-panel">
+			<div class="panel-body">
+				<div class="page-header">
+					<h2>Calorie Calculator
+					</h2>
+				</div>
+				<div>
+					<h1>Fill out the form below.</h1>
+					<label>Female:
+						<input id="female" type="radio" name="gender" onchange="calsPerDay()">
+					</label>
+					<label>Male:
+						<input id="male" type="radio" name="gender" onchange="calsPerDay()" checked>
+					</label>
+					<br>
+					<label>Age:
+						<br>
+						<input id="age" type="number" oninput="calsPerDay()" value="0"> years
+					</label>
+					<br>
+					<label>Height:
+						<br>
+						<input id="height" type="number" oninput="calsPerDay()" value="0"> inches
+					</label>
+					<br>
+					<label>Weight:
+						<br>
+						<input id="weight" type="number" oninput="calsPerDay()" value="0"> pounds
+					</label>
+					<br>
+					<INPUT type="submit" id="calculate" value="Calculate">
+					<br>
+					<label>
+						Base metabolic rate:
+						<span id="totalCals"></span> kcal per day
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- center panel calories per week split into days -->
+	<div class="col-md-6">
+		<div class="panel panel-default center-panel">
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page-header">
+							<h2 class="animated bounce">
+								Calorie Diet
+							</h2>
+						</div>
+						<div>
+							<p>Calorie Basics Choosing to start a diet plan that involves counting calories is a simple, basic way to lose weight.
+								However, often dieters are not sure of the number of calories they should consume to achieve successful weight loss.
+								The key to losing weight is to take in fewer calories, or burn more calories, than your body needs, creating a calorie
+								deficit. The base metabolic rate that you just calculated is what you need to maintaine your weight or the starting
+								point for the math.</p>
+
+							<p>Each pound is the equivalent of 3500 calories. To lose approximately one pound per week you would need to reduce your
+								caloric intake by 500 calories each day, or reduce it by 250 calories and exercise enough to burn the additional
+								250 calories. Dieters are often not sure which calorie based plan is best for them. Many arbitrarily pick a diet
+								plan they think has the correct number of calories for them such as a 1200 or 1500 calorie plan. This is generally
+								not the best way to decide how many calories your body needs daily to receive proper nutrition and remain healthy.
+								The decision should be based on your current weight and activity level.</p>
+
+							<p>A standard diet would be to reduce your intake by 250 calories a day and excersize to burn 250 calories.</p>
+							<br>
+							<h2 id="metabolicRate"></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Final Results -->
+	<div class="col-md-3">
+		<div class="panel panel-default right-panel">
+			<div class="panel-body">
+				<div class="page-header">
+					<h2>Final Results</h2>
+				</div>
+				<div>
+					<label align="left" for="sunday">Sunday</label>
+					<br>
+					<input align="right" class="cals" id="sunday" type="number">
+					<br>
+					<label for="monday">Monday</label>
+					<br>
+					<input id="monday" class="cals" type="number">
+					<br>
+					<label for="tuesday">Tuesday</label>
+					<br>
+					<input id="tuesday" class="cals" type="number">
+					<br>
+					<label for="wensday">Wensday</label>
+					<br>
+					<input id="wensday" class="cals" type="number">
+					<br>
+					<label for="thursday">Thursday</label>
+					<br>
+					<input id="thursday" class="cals" type="number">
+					<br>
+					<label for="friday">Friday</label>
+					<br>
+					<input id="friday" class="cals" type="number">
+					<br>
+					<label for="saturday">Saturday</label>
+					<br>
+					<input id="saturday" class="cals" type="number">
+					<br>
+					<br>
+					<a href="pageThree.html">
+						<INPUT type="submit" value="Finish">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/javascript/script.js"></script>
+</body>
+
+</html>

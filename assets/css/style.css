@@ -1,0 +1,82 @@
+body {
+	background-image: url(../images/background.jpg);
+	align-content: center;
+}
+h1 {
+	text-align: center;
+	font-weight: bold; 
+}
+* {
+	box-sizing: border-box;
+}
+.carouselImages {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.carousel-control {
+	opacity: 10;
+	margin-left: 120px;
+	margin-right: 120px;
+	background-color: yellow;
+}
+.right-panel, .left-panel {
+height: 75vh;
+text-align: center;
+}
+.center-panel {
+height: 90vh;
+text-align: center;
+}
+[class*='col-'] {
+position: relative;
+}
+.recipeList, .addedItems {
+background-color: red;
+width: 100%;
+height: 70vh;
+}
+.neededContainer {
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+width: 100%;
+justify-content: space-evenly;
+height: 5vh;
+}
+#alreadyHave {
+margin-bottom: 8px;
+}
+.listItems {
+width: 100%;
+background-color: red;
+height: 75vh;
+}
+.mainContainer {
+display: flex;
+justify-content: space-evenly;
+margin-left: 200px;
+}
+.shoppingList {
+width: 100%;
+}
+table td {
+border: 1px solid black;
+text-align: center;
+}
+td {
+height: 7vh;
+width: 40%;
+}
+.listImage {
+width: 33%;
+
+}
+.image-data {
+width: 33%;
+}
+.btnstyle {
+	background-color: rgb(90, 77, 77);
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+}
