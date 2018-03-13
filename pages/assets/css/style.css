@@ -80,3 +80,8 @@ width: 33%;
 	color: rgb(0, 0, 0);
 	font-weight: bold;
 }
+@media screen and (max-width: 993px) {
+	.btt {
+		display: none;
+	}
+	}
